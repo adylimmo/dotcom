@@ -92,3 +92,12 @@ Route::delete('admin/products/{products}', ['as'=> 'admin.products.destroy', 'us
 Route::get('admin/products/{products}', ['as'=> 'admin.products.show', 'uses' => 'Admin\ProductController@show']);
 Route::get('admin/products/{products}/edit', ['as'=> 'admin.products.edit', 'uses' => 'Admin\ProductController@edit']);
 // Route::post('importProduct', 'Admin\ProductController@import');
+
+Route::resource('masterReligions', 'MasterReligionController');
+// Route::post('importMasterReligion', 'MasterReligionController@import');
+
+Route::resource('masterDivisions', 'MasterDivisionController');
+// Route::post('importMasterDivision', 'MasterDivisionController@import');
+
+Route::resource('masterDepartmens', 'MasterDepartmenController');
+// Route::post('importMasterDepartmen', 'MasterDepartmenController@import');

@@ -40,7 +40,19 @@
     <a href="{!! url('menu-manager') !!}"><i class="fa fa-bars"></i><span>Menus</span></a>
 </li>--}}
 
-<li class="{{ Request::is('products*') ? 'active' : '' }}">
+{{-- <li class="{{ Request::is('products*') ? 'active' : '' }}">
     <a href="{!! route('admin.products.index') !!}"><i class="fa fa-edit"></i><span>Products</span></a>
+</li> --}}
+
+<li class="{{ Request::is('masterReligions*') ? 'active' : '' }}">
+    <a href="{!! route('masterReligions.index') !!}"><i class="fa fa-edit"></i><span>Master Religions</span></a>
+</li>
+
+<li class="{{ Request::is('masterDivisions*') ? 'active' : '' }}">
+    <a href="{!! route('masterDivisions.index') !!}"><i class="fa fa-edit"></i><span>Master Divisions</span></a>
+</li>
+
+<li class="{{ Request::is('masterDepartmens*') ? 'active' : '' }}">
+    <a href="{!! route('masterDepartmens.index') !!}"><i class="fa fa-edit"></i><span>Master Departmens</span></a>
 </li>
 

@@ -157,3 +157,9 @@ Route::delete('JSON/{model}/{id}', function($model, $id) {
 // End global API for direct model class under Models directory
 
 Route::resource('products', 'ProductAPIController');
+
+Route::resource('master_religions', 'MasterReligionAPIController');
+
+Route::resource('master_divisions', 'MasterDivisionAPIController');
+
+Route::resource('master_departmens', 'MasterDepartmenAPIController');
